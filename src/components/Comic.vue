@@ -14,4 +14,18 @@ export default {
 
 <style scoped lang="scss">
 
+    .comic {
+        width: calc(100% / 6);
+        padding-bottom: 20px;
+
+        img {
+            width: 150px;
+        }
+
+        h3 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+    }
 </style>

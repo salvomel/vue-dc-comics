@@ -1,7 +1,12 @@
 <template>
     <section>
-        <div class="comics">
-            <Comic v-for="(comic, index) in comics" :key="index" :comicObject="comic"/>
+        <div class="container">
+            <div class="comics">
+                <Comic v-for="(comic, index) in comics" :key="index" :comicObject="comic"/>
+            </div>
+            <div class="main-button">
+                <a href="#">LOAD MORE</a>
+            </div>
         </div>
     </section>
 </template>
@@ -97,15 +102,26 @@ export default {
 
 <style scoped lang="scss">
 
-.section {
+section {
     background-color: #1c1c1c;
+    padding: 20px 0 25px;
     
     .comics {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        padding: 25px 15px;
+    }
+
+    .main-button {
+        font-size: 18px;
+        text-align: center;
+    
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #0282f9;
+            padding: 10px 40px;
+        }
     }
 }
-
-
 </style>
