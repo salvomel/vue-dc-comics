@@ -1,16 +1,18 @@
 <template>
     <header class="container">
-        <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="Logo DC">
-        </div>
+        <div class="header-wrapper">
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="Logo DC">
+            </div>
 
-        <nav>
-            <ul class="menu">
-                <li v-for="(link, index) in links" :key="index" :class="{current: link.current}">
-                    <a :href="link.url">{{link.text}}</a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="menu">
+                    <li v-for="(link, index) in links" :key="index" :class="{current: link.current}">
+                        <a :href="link.url">{{link.text}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 </template>
 
@@ -77,7 +79,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-header {
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
