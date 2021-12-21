@@ -98,6 +98,7 @@ export default {
     .background-container {
         background-image: url(../assets/img/footer-bg.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
 
         .footer-wrapper {
             padding: 25px 0 35px;

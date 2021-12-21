@@ -2,6 +2,8 @@
   <div id="app">
     <Header />
 
+    <Banner />
+
     <main></main>
 
     <Prefooter />
@@ -15,13 +17,15 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Prefooter from "./components/Prefooter.vue";
+import Banner from "./components/Banner.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Footer,
-    Prefooter
+    Prefooter,
+    Banner
   },
 };
 </script>
