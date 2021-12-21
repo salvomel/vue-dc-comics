@@ -101,6 +101,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../style/variables';
 
 section {
     background-color: #1c1c1c;
@@ -119,7 +120,7 @@ section {
         a {
             text-decoration: none;
             color: white;
-            background-color: #0282f9;
+            background-color: $brand_primary_color;
             padding: 10px 40px;
         }
     }

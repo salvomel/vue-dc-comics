@@ -94,6 +94,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../style/variables';
     
     .background-container {
         background-image: url(../assets/img/footer-bg.jpg);
@@ -154,7 +155,7 @@ export default {
 
             .button {
                 padding: 10px;
-                border: 2px solid #0282f9;
+                border: 2px solid $brand_primary_color;
 
                 a {
                     text-decoration: none;
@@ -167,7 +168,7 @@ export default {
                 align-items: center;
 
                 span {
-                    color: #0282f9
+                    color: $brand_primary_color;
                 }
 
                 img {

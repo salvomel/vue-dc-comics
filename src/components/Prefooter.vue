@@ -47,9 +47,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../style/variables';
 
     .prefooter {
-        background-color: #0282f9;
+        background-color: $brand_primary_color;
         padding: 40px 0;
         
         ul { 

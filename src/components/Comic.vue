@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../style/variables';
 
     .comic {
         width: calc(100% / 6);
@@ -26,6 +27,7 @@ export default {
             color: white;
             text-transform: uppercase;
             font-size: 15px;
+            margin-top: 10px;
         }
     }
 </style>

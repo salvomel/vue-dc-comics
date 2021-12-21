@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../style/variables';
 
     .banner {
         height: 350px;
@@ -31,7 +32,7 @@ export default {
             font-size: 20px;
             padding: 10px 20px;
             text-decoration: none;
-            background-color: #0282f9;
+            background-color: $brand_primary_color;
             color: white
         }
     }
