@@ -47,32 +47,33 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.prefooter {
-    background-color: #0282f9;
-    padding: 40px 0;
-    
-    ul { 
-        display: flex;
-        list-style-type: none;
-        width: 65%;
-        margin: auto;
 
-        li {
+    .prefooter {
+        background-color: #0282f9;
+        padding: 40px 0;
+        
+        ul { 
             display: flex;
-            align-items: center;
-            margin: 0 10px;
-        }
+            list-style-type: none;
+            justify-content: center;
 
-        a {
-            color: white;
-            text-decoration: none;
-            margin-left: 10px;
-            font-size: 13px;
-        }
-
-        img {
-                height: 40px;
+            li {
+                display: flex;
+                align-items: center;
+                margin: 0 15px;
             }
+
+            a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+                font-size: 13px;
+            }
+
+            img {
+                height: 40px;
+                max-width: 40px;
+            }
+        }
     }
-}
 </style>

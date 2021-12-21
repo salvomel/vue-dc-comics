@@ -3,62 +3,61 @@
         <div class="background-container">
 
             <div class="container">
+
                 <div class="footer-wrapper">
-                    <div class="col">
 
-                        <div class="left-side">
+                    <div class="left-side">
 
-                            <div class="footer-col">
-                                <h3>dc comics</h3>
-                                <ul class="footer-menu">
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                </ul>
-                            
-                                <h3>shop</h3>
-                                <ul class="footer-menu">
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                </ul>
-                            </div>
+                        <div class="footer-col">
+                            <h3>dc comics</h3>
+                            <ul class="footer-menu">
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                            </ul>
                         
-                            <div class="footer-col">
-                                <h3>dc</h3>
-                                <ul class="footer-menu">
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                </ul>
-                            </div>
-                        
-                            <div class="footer-col">
-                                <h3>sites</h3>
-                                <ul class="footer-menu">
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                </ul>
-                            </div>
-
+                            <h3>shop</h3>
+                            <ul class="footer-menu">
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                            </ul>
                         </div>
-                    </div>
+                    
+                        <div class="footer-col">
+                            <h3>dc</h3>
+                            <ul class="footer-menu">
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <h3>sites</h3>
+                            <ul class="footer-menu">
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                                <li><a href="#">link</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="col">
+                    </div>
+                    
+                    <div class="footer-img">
                         <img src="../assets/img/dc-logo-bg.png" alt="Logo DC">
                     </div>
 
@@ -70,7 +69,7 @@
             <div class="container">
                 <div class="bottom-wrapper">
                     <div class="button">
-                        <a>SIGN-UP NOW!</a>
+                        <a href="#">SIGN-UP NOW!</a>
                     </div>
 
                     <div class="social">
@@ -99,50 +98,48 @@ export default {
     .background-container {
         background-image: url(../assets/img/footer-bg.jpg);
         background-size: cover;
-        height: 300px;
 
         .footer-wrapper {
-            display: flex;
+            padding: 25px 0 35px;
+            position: relative;
+            overflow: hidden;
 
-            .col {
-                width: 50%;
+            .footer-img {
+                position: absolute;
+                top: -25%;
+                right: 0;
 
                 img {
-                    width: 300px;
+                    width: 450px;
                 }
+            }
 
-                .left-side {
-                    display: flex;
-                    width: 50%;
+            .left-side {
+                display: flex;
 
-                    .footer-col {
-                        // width: calc(100% / 3);
-                        padding: 20px 10px;
+                .footer-col {
+                    margin-right: 20px;
 
-                        h3 {
-                            text-transform: uppercase;
-                            font-size: 15px;
-                            color: white;
-                            margin-top: 10px;
-                        }
-
-                        .footer-menu {
-                            list-style-type: none;
-                            margin-top: 10px;
-
-                            a {
-                                text-decoration: none;
-                                color: #666f66;
-                                font-size: 12px;
-                            }
-                        }
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        color: white;
+                        margin-top: 10px;
                     }
 
+                    .footer-menu {
+                        list-style-type: none;
+                        margin-top: 10px;
+
+                        a {
+                            text-decoration: none;
+                            color: #666f66;
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
         }
-
-
     }
 
     .footer-bottom {
@@ -157,7 +154,11 @@ export default {
             .button {
                 padding: 10px;
                 border: 2px solid #0282f9;
-                color: white;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
             }
 
             .social {
